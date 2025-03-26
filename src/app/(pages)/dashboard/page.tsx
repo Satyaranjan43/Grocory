@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 
 export default function Dashboard() {
     console.log("Hello world");
@@ -53,10 +54,13 @@ export default function Dashboard() {
             <div className="mb-6 mt-6 flex h-full bg-gray-100 shadow-lg rounded-xl overflow-hidden">
                 {/* Image Section */}
                 <div className="flex-1 flex items-center justify-center p-6 bg-gradient-to-r from-gray-300 to-gray-200">
-                    <img
+                    <Image
                         className="rounded-full w-40 h-40 border-4 border-white shadow-lg transition-transform duration-300 transform hover:scale-110"
-                        src="https://images.freeimages.com/images/large-previews/bc4/curious-bird-1-1374322.jpg?fmt=webp&h=350"
+                        src="https://images.freeimages.com/images/large-previews/bc4/curious-bird-1-1374322.jpg?fmt=webp&h=350"  // Use a local image or use an external image config
                         alt="random"
+                        width={160}  // Specify width
+                        height={160}  // Specify height
+                        priority={true}  // Optional: for images above the fold
                     />
                 </div>
 
@@ -81,10 +85,13 @@ export default function Dashboard() {
                     </h1>
                 </div>
                 <div className="flex-1 flex items-center justify-center p-6 bg-gradient-to-r from-gray-300 to-gray-200">
-                    <img
+                    <Image
                         className="rounded-full w-40 h-40 border-4 border-white shadow-lg transition-transform duration-300 transform hover:scale-110"
-                        src="https://images.freeimages.com/images/large-previews/bc4/curious-bird-1-1374322.jpg?fmt=webp&h=350"
+                        src="https://images.freeimages.com/images/large-previews/bc4/curious-bird-1-1374322.jpg?fmt=webp&h=350"  // Use a local image or use an external image config
                         alt="random"
+                        width={160}  // Specify width
+                        height={160}  // Specify height
+                        priority={true}  // Optional: for images above the fold
                     />
                 </div>
 
